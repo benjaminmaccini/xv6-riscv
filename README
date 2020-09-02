@@ -1,3 +1,22 @@
+Note:
+I am not an MIT student. The functionality here serves mainly for
+my own self-edification, hence the structure of the repo may not be
+usable in an actual classroom setting.
+
+I am roughly following this schedule: https://pdos.csail.mit.edu/6.828/2020/schedule.html
+
+Custom Run Reference:
+Makes use of the Debian docker image, see Dockerfile for more detail
+- `make docker-build` builds the image with the tag benjaminmaccini/xv6-riscv:latest
+- `make docker-run` to run the image in interactive mode
+- `cd xv6-riscv && make qemu` launches QEMU for the base xv6-riscv, good for sandboxing
+- `cd xv6-labs-2020 && make qemu` launches QEMU for the labs portion
+    - This submodule includes make target for `make grade`
+- Ctrl-p = ps for QEMU
+- Ctrl-a x = Exit QEMU
+
+--- Begin original README ---
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern RISC-V multiprocessor using ANSI C.

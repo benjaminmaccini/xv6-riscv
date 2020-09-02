@@ -170,3 +170,8 @@ qemu-gdb: $K/kernel .gdbinit fs.img
 	@echo "*** Now run 'gdb' in another window." 1>&2
 	$(QEMU) $(QEMUOPTS) -S $(QEMUGDB)
 
+docker-build:
+	docker build -t benjaminmaccini/xv6-riscv .
+
+docker-run:
+	docker run -it benjaminmaccini/xv6-riscv:latest
