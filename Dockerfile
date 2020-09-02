@@ -1,7 +1,7 @@
 FROM debian:bullseye
 
 RUN apt-get update
-RUN apt-get install -y build-essential git gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
+RUN apt-get install -y build-essential git gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu vim curl zlib1g-dev
 
 # Need python for the grading script
 RUN curl -O https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz && tar -xf Python-3.8.2.tar.xz
