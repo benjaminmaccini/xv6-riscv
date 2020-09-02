@@ -1,9 +1,9 @@
-Note:
-I am not an MIT student. The functionality here serves mainly for
+Notes:
+- I am not an MIT student. The functionality here serves mainly for
 my own self-edification, hence the structure of the repo may not be
 usable in an actual classroom setting.
-
-I am roughly following this schedule: https://pdos.csail.mit.edu/6.828/2020/schedule.html
+- I am roughly following this schedule: https://pdos.csail.mit.edu/6.828/2020/schedule.html
+- There will be NO public solutions to the labs, for obvious reasons
 
 Custom Run Reference:
 Makes use of the Debian docker image, see Dockerfile for more detail
